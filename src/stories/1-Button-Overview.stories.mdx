@@ -1,0 +1,57 @@
+import { Meta, Preview, Props } from '@storybook/addon-docs/blocks';
+import Button from '../components/Button';
+import OutlineButton from '../components/OutlineButton';
+
+<Meta title="Buttons/Overview" component={Button} />
+
+# Button
+### Colors
+Buttons can be colorized by adding `color` tag to the component.
+`blue` is our primary (brand) color. `gray` or `white` should always be used as a
+secondary action button. `red` should only ever be used for deleting
+or something critical (dangerous).
+
+<Preview>
+  <Button color="blue">Blue Button</Button>
+  <Button color="gray">Gray Button</Button>
+  <Button color="white">White Button</Button>
+  <Button color="red">Red Button</Button>
+</Preview>
+
+### Outline
+Buttons can also be outlined.  Simply replace the `Button` component with
+`OutlineButton` and use the same colors as above.
+<Preview>
+  <OutlineButton color="blue">Blue Button</OutlineButton>
+  <OutlineButton color="gray">Gray Button</OutlineButton>
+  <OutlineButton color="white">White Button</OutlineButton>
+  <OutlineButton color="red">Red Button</OutlineButton>
+</Preview>
+
+### Sizes
+Buttons can be sized by adding the `size` tag to the component. Sizes come in
+`xs`, `sm`, `lg`, `xl`.  No size specified is our default size.
+<Preview>
+  <Button color="blue" size="xs">XS Button</Button>
+  <Button color="blue" size="sm">Small Button</Button>
+  <Button color="blue">Button</Button>
+  <Button color="blue" size="lg">Large Button</Button>
+  <Button color="blue" size="xl">XL Button</Button>
+</Preview>
+
+### Block
+To fill the width of a card or a form, simply add `className="w-full"` to the `Button`
+component.
+<Preview>
+  <Button color="blue" className="w-full">Button</Button>
+</Preview>
+
+### States
+Buttons can be disabled by adding `disabled="true"`.
+component.
+<Preview>
+  <Button color="blue" disabled="true">Disabled Button</Button>
+</Preview>
+
+### Properties
+<Props of={Button} />

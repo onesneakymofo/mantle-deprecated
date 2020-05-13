@@ -2,34 +2,36 @@ import React from "react";
 import PropTypes from "prop-types";
 import Button from './Button';
 
-class LinkButton extends Component {
+class LinkButton extends React.Component {
   render() {
-    const { text, ...rest } = this.props;
+    const { ...rest } = this.props;
     return (
       <Button
-        className={ 'text-blue-600 border-0 ' + this.props.className}
+        {...rest}
+        className={ 'text-blue-600 border-2 border-white ' + this.props.className}
       >
-      { this.props.text }
+        { this.props.children }
       </Button>
     );
   }
 }
 
 LinkButton.propTypes = {
-  className: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
+  className: PropTypes.string,
+  color: PropTypes.string,
+  size: PropTypes.string,
   disabled: PropTypes.bool,
   type: PropTypes.string,
   hidden: PropTypes.bool,
   role: PropTypes.string,
-  onclick: PropTypes.func
+  onclick: PropTypes.func,
 };
 
+
 LinkButton.defaultProps = {
-  disabled: false,
-  text: "Submit",
-  type: "button",
   className: "text-blue-600 border-0",
+  disabled: false,
+  type: "button",
   hidden: false,
   role: "button"
 };
