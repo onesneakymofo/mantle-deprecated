@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import buttonStyle from "./style";
 
 const Button = (
   {
@@ -15,9 +16,9 @@ const Button = (
     ...rest
   }
 ) => {
-
   return (
     <button
+      className={ buttonStyle({color, variant, size, disabled}) + " " + className}
       { ...rest }
     >
       { children }
