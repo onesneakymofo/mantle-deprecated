@@ -1,0 +1,78 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import { withKnobs, select, boolean } from '@storybook/addon-knobs';
+
+import Button from '../components/Button';
+
+<Meta title="Button" component={Button} />
+
+# Button
+
+### Usage
+<Preview>
+  <Button>Button</Button>
+</Preview>
+
+### Variants
+`Button` has four types of  variants: `solid`, 
+`outline`, `ghost`, and `link`. When creating a `Button`,
+`solid` should always be used as the primary action button 
+followed by an `outline` or `ghost` button.  `link` 
+buttons should be used primary in tables.`
+
+<Preview>
+  <Button variant="solid">Solid Button</Button>
+  <Button variant="outline">Outline Button</Button>
+  <Button variant="link">Link Button</Button>
+  <Button variant="ghost">Ghost Button</Button>
+</Preview>
+
+
+### Colors
+Buttons can be colorized by adding `color` tag to the component.
+`blue` is our primary (brand) color. `gray` or `white` should always be used as a
+secondary action button. `red` should only ever be used for deleting
+or something critical (dangerous).
+
+<Preview>
+  <Button color="blue">Blue Button</Button>
+  <Button color="gray">Gray Button</Button>
+  <Button color="red">Red Button</Button>
+</Preview>
+
+### Sizes
+Buttons can be sized by adding the `size` tag to the component. Sizes come in
+`xs`, `sm`, `lg`, `xl`.  No size specified is our default size.
+<Preview>
+  <Button size="xs">XS Button</Button>
+  <Button size="sm">Small Button</Button>
+  <Button>Regular Button</Button>
+  <Button size="lg">Large Button</Button>
+  <Button size="xl">XL Button</Button>
+</Preview>
+
+### States
+A `Button` can be disabled by adding `disabled="true"`to the component.
+<Preview>
+  <Button color="blue" disabled="true">Disabled Button</Button>
+</Preview>
+
+### Block
+To fill the width of a card or a form, simply add `className="w-full"` to a `Button`.
+<Preview>
+  <Button color="blue" className="w-full">Button</Button>
+</Preview>
+
+### Other Examples
+<Preview>
+  <Button variant="outline" color="gray">Gray outline</Button>
+  <Button variant="outline" color="gray" disabled="true">Gray outline</Button>
+  <Button variant="outline" color="red" size="xs">XS Red Button</Button>
+  <Button variant="outline" color="red" size="xs" disabled="true">XS Red Button</Button>
+  <Button color="gray" variant="link">Gray Link</Button>
+  <Button color="gray" variant="ghost">Gray Ghost</Button>
+  <Button color="red" variant="ghost">Red Ghost</Button>
+</Preview>
+
+
+### Properties
+<Props of={Button} />
