@@ -1,13 +1,11 @@
-const baseProps = "inline-block px-2 rounded-full font-bold tracking-wide";
+const baseProps = "inline-block px-2 py-1 rounded-full subpixel-antialiased font-semibold tracking-wide";
 const sizeProps = size => size === 'md' ? 'text-base' : `text-${size}`;
 
 const solidProps = color => {
-  if (color === 'white')
-    return 'bg-white border-gray-300 border-2 text-gray-800';
-  else if (color === 'black')
+  if (color === 'black')
     return 'bg-gray-800 text-gray-200';
   else
-    return `bg-${color}-300 text-${color}-800`;
+    return `bg-${color}-200 text-${color}-700`;
 }
 
 const badgeStyle = props => {
