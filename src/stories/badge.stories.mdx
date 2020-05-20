@@ -1,0 +1,41 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import { withKnobs, select, boolean } from '@storybook/addon-knobs';
+
+import Badge from '../components/Badge';
+
+<Meta title="Badge" component={Badge} />
+
+# Badge
+
+### Usage
+<Preview>
+  <Badge>Badge</Badge>
+</Preview>
+
+### Colors
+Badges can be colorized by adding `color` tag to the component.
+`gray` is the default badge color.
+<Preview>
+  <Badge color="gray">Gray Badge</Badge>
+  <Badge color="blue">Blue Badge</Badge>
+  <Badge color="green">Green Badge</Badge>
+  <Badge color="yellow">Yellow Badge</Badge>
+  <Badge color="orange">Orange Badge</Badge>
+  <Badge color="red">Red Badge</Badge>
+  <Badge color="black">Black Badge</Badge>
+  <Badge color="white">White Badge</Badge>
+</Preview>
+
+### Sizes
+Badges can be sized by adding the `size` tag to the component. Sizes come in
+`xs`, `sm`, `md`, `lg`, `xl`.  `xs` is the default size.
+<Preview>
+  <Badge>XS Button</Badge>
+  <Badge size="sm">Small Button</Badge>
+  <Badge size="md">Regular Button</Badge>
+  <Badge size="lg">Large Button</Badge>
+  <Badge size="xl">XL Button</Badge>
+</Preview>
+
+### Properties
+<Props of={Badge} />
