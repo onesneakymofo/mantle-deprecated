@@ -7,14 +7,12 @@ const Badge = (
     color = 'gray',
     size = 'xs',
     children,
-    className,
-    ...rest
+    className
   }
 ) => {
   return (
     <span
       className={ badgeStyle({color, size}) + " " + className}
-      { ...rest }
     >
       { children }
     </span>
@@ -22,7 +20,6 @@ const Badge = (
 }
 
 Badge.propTypes = {
-  className: PropTypes.string,
   color: PropTypes.string,
   size: PropTypes.string
 };
