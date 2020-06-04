@@ -1,6 +1,6 @@
 TO-DO:
 
-- [ ] Alerts
+- [x] Alerts
 - [ ] Tables
 - [ ] Grid
 - [ ] Dropdown
