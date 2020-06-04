@@ -1,0 +1,93 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import { withKnobs, select, boolean } from '@storybook/addon-knobs';
+
+import { Alert, AlertTitle, AlertDismiss, AlertDescription, AlertLink } from '../components/Alert';
+
+<Meta title="Alert" component={Alert} />
+
+# Alert
+
+### Usage
+<Preview>
+  <Alert>
+    <AlertTitle>This is an alert!</AlertTitle>
+    <AlertDismiss></AlertDismiss>
+    <AlertDescription>Something has happened that needs your attention.</AlertDescription>
+  </Alert>
+</Preview>
+
+### Colors
+Alerts can be colorized by adding `color` tag to the component.
+`gray` is the default badge color. Options are `gray`, `blue`, `green`,
+`yellow`, and `red`
+<Preview>
+  <Alert color="gray">
+    <AlertTitle>This is an alert!</AlertTitle>
+    <AlertDescription>Something has happened that needs your attention.</AlertDescription>
+  </Alert>
+  <br />
+  <Alert color="blue">
+    <AlertTitle>This is an alert!</AlertTitle>
+    <AlertDescription>Something has happened that needs your attention.</AlertDescription>
+  </Alert>
+  <br />
+  <Alert color="green">
+    <AlertTitle>This is an alert!</AlertTitle>
+    <AlertDescription>Something has happened that needs your attention.</AlertDescription>
+  </Alert>
+  <br />
+  <Alert color="red">
+    <AlertTitle>This is an alert!</AlertTitle>
+    <AlertDescription>Something has happened that needs your attention.</AlertDescription>
+  </Alert>
+  <br />
+  <Alert color="yellow">
+    <AlertTitle>This is an alert!</AlertTitle>
+    <AlertDescription>Something has happened that needs your attention.</AlertDescription>
+  </Alert>
+</Preview>
+
+### Alerts With Titles / Descriptions
+Add `AlertTitle` and `AlertDescription` to create a full alert.
+<Preview>
+  <Alert color="blue">
+    <AlertTitle>This is a title!</AlertTitle>
+    <AlertDescription>This is a description</AlertDescription>
+  </Alert>
+</Preview>
+
+### Alerts With Title Only
+Add `AlertTitle` to create a title-only alert for more important, single-lined alerts
+<Preview>
+  <Alert color="blue">
+    <AlertTitle>This is a title-only alert!</AlertTitle>
+  </Alert>
+</Preview>
+
+### Alerts With Description Only
+Add `AlertDescription` to create a description-only alert for less important, single-lined alerts
+<Preview>
+  <Alert color="red">
+    <AlertDescription>This is a description-only alert</AlertDescription>
+  </Alert>
+</Preview>
+
+### Alerts With Dismiss Button
+Add `AlertDismiss` to add a only the  title to the Alert
+<Preview>
+  <Alert color="yellow">
+    <AlertDescription>This is a dismissable alert</AlertDescription>
+    <AlertDismiss />
+  </Alert>
+</Preview>
+
+### Alerts With Links
+Add `AlertDismiss` to add a only the  title to the Alert
+<Preview>
+  <Alert color="green">
+    <AlertDescription>This is a linkable alert</AlertDescription>
+    <AlertLink link="#" title="Details" />
+  </Alert>
+</Preview>
+
+<Props of={Alert} />

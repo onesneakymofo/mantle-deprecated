@@ -4,15 +4,15 @@ import buttonStyle from "./style";
 
 const Button = (
   {
-    color = 'blue', 
+    color = 'blue',
     variant = 'solid',
-    size = 'md', 
+    size = 'md',
     disabled,
-    type, 
+    type,
     role,
     children,
     className,
-    onclick, 
+    onclick,
     ...rest
   }
 ) => {
@@ -39,7 +39,6 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  className: " ",
   disabled: false,
   type: "button",
   hidden: false,
