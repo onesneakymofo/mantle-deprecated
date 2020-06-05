@@ -1,0 +1,58 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import { withKnobs, select, boolean } from '@storybook/addon-knobs';
+
+import { Avatar, AvatarBadge } from '../components/Avatar';
+
+<Meta title="Avatar" component={Avatar} />
+
+# Avatar
+
+### Usage
+<Preview>
+  <Avatar src="https://images.unsplash.com/photo-1579264688258-c0ebf8c7942a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80" />
+</Preview>
+
+### Sizes
+Avatars can be sized by adding the `size` tag to the component. Sizes come in
+`xs`, `sm`, `md`, `lg`, `xl`.  No size specified is our default size (`sm`).
+<Preview>
+    <Avatar size="xs" src="https://images.unsplash.com/photo-1579264688258-c0ebf8c7942a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80" />
+    <Avatar size="sm" src="https://images.unsplash.com/photo-1579264688258-c0ebf8c7942a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80" />
+    <Avatar size="md" src="https://images.unsplash.com/photo-1579264688258-c0ebf8c7942a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80" />
+    <Avatar size="lg" src="https://images.unsplash.com/photo-1579264688258-c0ebf8c7942a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80" />
+    <Avatar size="xl" src="https://images.unsplash.com/photo-1579264688258-c0ebf8c7942a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80" />
+</Preview>
+
+### Avatars (Name Only)
+If no source is provided or the source is broken and a name is passed to the Avatar,
+we default to the first letters of the first and last name as a placeholder.
+
+<Preview>
+  <Avatar name="Owly McHooterson" size="xs" />
+  <Avatar name="Owly McHooterson" />
+  <Avatar name="Owly McHooterson" size="md" />
+  <Avatar name="Owly McHooterson" size="lg" />
+  <Avatar name="Owly McHooterson" size="xl" />
+</Preview>
+
+### Default Avatar
+If no source or name is provided, then we default to an SVG.
+<Preview>
+  <Avatar />
+</Preview>
+
+### Avatar with colored Badge
+If no source or name is provided, then we default to an SVG.
+<Preview>
+    <Avatar src="https://images.unsplash.com/photo-1579264688258-c0ebf8c7942a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80" >
+      <AvatarBadge color="red" />
+    </Avatar>
+    <Avatar name="Owly McHooterson" >
+      <AvatarBadge color="blue" />
+    </Avatar>
+    <Avatar>
+      <AvatarBadge color="green" />
+    </Avatar>
+</Preview>
+
+<Props of={Avatar} />
