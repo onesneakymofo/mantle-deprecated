@@ -17,4 +17,4 @@ TO-DO:
 - [ ] Spinners
 - [ ] Headers
 - [ ] Tabs
-- [ ] Avatars
+- [x] Avatars
