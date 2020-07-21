@@ -61,7 +61,6 @@ const AlertDismiss = () => {
 
 const AlertLink = ({link, title}) => {
   const { color } = useAlertContext();
-  console.log(color);
   return (
     <span className="absolute top-0 bottom-0 right-0 px-4 py-3 font-bold">
       <a href={link} className={`text-${color}-700`}>{title} &#8594;</a>

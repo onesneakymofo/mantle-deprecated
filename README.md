@@ -9,7 +9,7 @@ TO-DO:
 - [ ] Vertical Navigation
 - [ ] Notifications (Toasts)
 - [ ] Tooltip
-- [ ] Breadcrumbs
+- [x] Breadcrumbs
 - [ ] ButtonGroup
 - [ ] Collapse
 - [ ] Modal
