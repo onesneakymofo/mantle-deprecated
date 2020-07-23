@@ -5,7 +5,7 @@ TO-DO:
 - [ ] Grid
 - [ ] Dropdown
 - [ ] Form
-- [ ] Horizonal Navigation
+- [x] Horizonal Navigation
 - [ ] Vertical Navigation
 - [ ] Notifications (Toasts)
 - [ ] Tooltip

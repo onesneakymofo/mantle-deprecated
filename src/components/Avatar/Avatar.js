@@ -1,8 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import avatarStyle from "./style";
-import { createContext, useContext } from "react";
-
 
 const getInitials = name => {
   let [firstName, lastName] = name.split(" ");

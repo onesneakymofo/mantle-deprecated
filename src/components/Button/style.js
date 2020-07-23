@@ -1,20 +1,20 @@
-const baseProps = "inline-block px-4 py-2 rounded tracking-wider font-semibold border";
+const baseProps = "inline-block px-3 py-2 rounded tracking-wider border";
 const accessibilityProps = "focus:outline-none focus:shadow-outline";
 const sizeProps = size => size === 'md' ? 'text-base' : `text-${size}`;
 const disabledProps = disabled => disabled ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'
 
 const solidProps = color => {
   if (color === 'gray')
-    return 'bg-gray-300 border-gray-300 text-gray-800 hover:bg-gray-400 hover:border-gray-400';
+    return 'bg-gray-200 border-gray-200 text-gray-600 hover:bg-gray-300 hover:border-gray-300';
   else
-    return `bg-${color}-700 border-${color}-700 text-white hover:bg-${color}-800 hover:border-${color}-800`;
+    return `bg-${color}-600 border-${color}-600 text-white hover:bg-${color}-700 hover:border-${color}-800`;
 }
 
 const outlineProps = color => {
   if (color === 'gray')
-    return 'text-gray-700 border-gray-500 text-gray-800 hover:bg-gray-400 hover:border-gray-400'
+    return 'border-gray-500 text-gray-600 hover:bg-gray-300 hover:border-gray-300';
   else
-    return `text-${color}-700 border-${color}-700 hover:bg-${color}-800 hover:text-white hover:border-${color}-800`
+    return `text-${color}-600 border-${color}-600 hover:bg-${color}-700 hover:text-white hover:border-${color}-800`
 }
 
 const ghostProps = color => {

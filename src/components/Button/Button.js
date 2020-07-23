@@ -45,4 +45,4 @@ Button.defaultProps = {
   role: "button"
 };
 
-export default Button;
+export { Button };

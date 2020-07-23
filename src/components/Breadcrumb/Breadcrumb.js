@@ -1,7 +1,5 @@
 import React from "react";
 import breadcrumbStyle from "./style";
-import { createContext, useContext } from "react";
-
 
 const Breadcrumb = ({color = 'white', separator = '/', className, children}) => {
   const lastIndex = children.length - 1

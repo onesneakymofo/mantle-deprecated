@@ -17,48 +17,6 @@ h5 {
   @apply font-semibold;
 }
 
-.btn-link {
-  @apply text-blue-600 border-0;
-}
-
-.label,
-.badge {
-  @apply inline-block text-xs px-2 rounded-full font-bold tracking-wide;
-}
-
-.label-red,
-.badge-red {
-  @apply bg-red-200 text-red-800;
-}
-
-.label-green,
-.badge-green {
-  @apply bg-green-200 text-green-800;
-}
-.label-yellow,
-.badge-yellow {
-  @apply bg-yellow-200 text-yellow-800;
-}
-.label-blue,
-.badge-blue {
-  @apply bg-blue-200 text-blue-800;
-}
-.label-gray,
-.badge-gray {
-  @apply bg-gray-200 text-gray-800;
-}
-.label-black,
-.badge-black {
-  @apply bg-gray-800 text-gray-200;
-}
-
-.sidebar-item {
-  @apply ;
-}
-.sidebar-item:hover{
-  @apply bg-gray-200 text-gray-700;
-}
-
 td {
   @apply px-6 py-4 whitespace-no-wrap;
 }
