@@ -1,0 +1,31 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import { withKnobs, select, boolean } from '@storybook/addon-knobs';
+
+import { Header } from '../components/Header';
+
+<Meta title="Header" component={Header} />
+
+# Header
+
+### Usage
+<Preview>
+  <Header>
+    This is a header!
+  </Header>
+</Preview>
+
+### Tags
+
+### Sizes
+Headers can be sized by adding the `size` tag to the component. Sizes come in
+`xs`, `sm`, `md`, `lg`, `xl`, `2xl`.  No size specified is our default size (`md`).
+<Preview>
+  <Header size="2xl">This is a header!</Header>
+  <Header size="xl">This is a header!</Header>
+  <Header size="lg">This is a header!</Header>
+  <Header>This is a header!</Header>
+  <Header size="sm">This is a header!</Header>
+  <Header size="xs">This is a header!</Header>
+</Preview>
+
+<Props of={Header} />
