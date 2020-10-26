@@ -15,6 +15,6 @@ TO-DO:
 - [ ] Modal
 - [ ] ProgressBar
 - [ ] Spinners
-- [ ] Headers
+- [x] Headers
 - [ ] Tabs
 - [x] Avatars
