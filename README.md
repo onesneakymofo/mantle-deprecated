@@ -14,7 +14,7 @@ TO-DO:
 - [ ] Collapse
 - [ ] Modal
 - [ ] ProgressBar
-- [ ] Spinners
+- [x] Spinners
 - [x] Headers
 - [ ] Tabs
 - [x] Avatars
