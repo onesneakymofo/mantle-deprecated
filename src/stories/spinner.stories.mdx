@@ -1,0 +1,39 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import { withKnobs, select, boolean } from '@storybook/addon-knobs';
+
+import { Spinner } from '../components/Spinner';
+
+<Meta title="Spinner" component={Spinner} />
+
+# Header
+
+### Usage
+<Preview>
+  <Spinner />
+</Preview>
+
+### Sizes
+Spinners can be sized by adding the `size` tag to the component. Sizes come in
+`xs`, `sm`, `md`, `lg`, `xl`, `2xl`.  No size specified defaults to `md`.
+
+<Preview>
+    <Spinner size="xs" />
+    <Spinner size="sm" />
+    <Spinner size="md" />
+    <Spinner size="lg" />
+    <Spinner size="xl" />
+    <Spinner size="2xl" />
+</Preview>
+
+### Colors
+Spinners can be colorized by adding the `color` tag to the component. Colors come in
+`blue`, `white`, or `gray`.  No color specified defaults to `blue`.
+<Preview>
+    <Spinner color="blue" />
+    <div className="bg-blue-600">
+      <Spinner color="white"/>
+    </div>
+    <Spinner color="gray" />
+</Preview>
+
+<Props of={Spinner} />
