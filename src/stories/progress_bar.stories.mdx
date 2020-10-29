@@ -1,0 +1,25 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import { withKnobs, select, boolean } from '@storybook/addon-knobs';
+
+import ProgressBar from '../components/ProgressBar';
+
+<Meta title="ProgressBar" component={ProgressBar} />
+
+# ProgressBar
+
+### Usage
+<Preview>
+  <ProgressBar percent="50" />
+</Preview>
+
+### Colors
+Progress bars can be colorized by adding `color` tag to the component.
+`blue` is the default color.
+
+<Preview>
+  <ProgressBar color="gray" percent="50"/>
+</Preview>
+
+
+### Properties
+<Props of={ProgressBar} />

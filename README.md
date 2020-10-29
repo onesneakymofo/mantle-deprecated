@@ -13,7 +13,7 @@ TO-DO:
 - [ ] ButtonGroup
 - [ ] Collapse
 - [ ] Modal
-- [ ] ProgressBar
+- [x] ProgressBar
 - [x] Spinners
 - [x] Headers
 - [ ] Tabs
