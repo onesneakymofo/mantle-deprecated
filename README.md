@@ -2,7 +2,7 @@ TO-DO:
 
 - [x] Alerts
 - [ ] Tables
-- [ ] Grid
+- [x] Grid
 - [ ] Dropdown
 - [ ] Form
 - [x] Horizonal Navigation
