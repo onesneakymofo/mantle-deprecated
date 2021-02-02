@@ -16,7 +16,7 @@ const Sidebar = ({color, className, children}) => {
 const SidebarItem = ({link, count, icon, children}) => {
   return (
     <li className="my-px">
-      <a href="link" className="flex flex-row items-center h-12 px-4 rounded text-gray-600 hover:bg-gray-200">
+      <a href="link" className="flex flex-row items-center h-12 px-4 rounded text-blueGray-600 hover:bg-blueGray-200">
         { icon && <i className={`fa fa-${icon} mr-3`}></i> }
         {children}
       </a>
@@ -27,7 +27,7 @@ const SidebarItem = ({link, count, icon, children}) => {
 const SidebarHeader = ({ children }) => {
   return (
     <li className="my-px">
-      <div className="flex font-medium text-sm text-gray-500 px-4 my-4 uppercase">
+      <div className="flex font-medium text-sm text-blueGray-500 px-4 my-4 uppercase">
         { children }
       </div>
     </li>

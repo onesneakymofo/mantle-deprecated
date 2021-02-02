@@ -1,0 +1,66 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import { withKnobs, select, boolean } from '@storybook/addon-knobs';
+
+import { Flex, FlexItem } from '../components/Flex';
+
+<Meta title="Flex" component={Flex} />
+
+# Flex
+
+### Usage
+<Preview>
+  <Flex>
+    <FlexItem className="flex-auto">Flex</FlexItem>
+    <FlexItem className="flex-auto">on</FlexItem>
+    <FlexItem className="flex-auto">'em!</FlexItem>
+  </Flex>
+</Preview>
+
+### Information
+`Flex` is useful for elements that are considered one-dimensional.  Elements that span across your web app horizontally like nav menus or vertically like list groups can utilize `Flex`.
+
+### Examples
+
+#### Flex Direction
+
+You can flex an element horizontally by using `flex-row`.
+
+<Preview>
+  <Flex className="flex-row space-x-4">
+    <FlexItem>Flex</FlexItem>
+    <FlexItem>on</FlexItem>
+    <FlexItem>'em!</FlexItem>
+  </Flex>
+</Preview>
+
+You can flex an element vertically by using `flex-col`.
+
+<Preview>
+  <Flex className="flex-col space-y-4">
+    <FlexItem>Flex</FlexItem>
+    <FlexItem>on</FlexItem>
+    <FlexItem>'em!</FlexItem>
+  </Flex>
+</Preview>
+
+You can also reverse both by calling `flex-col-reverse` or `flex-row-reverse`. Note, if you
+using a spacer like `space-y-4`, you will need to add `space-y-reverse` to your `Flex`.
+
+<Preview>
+  <Flex className="flex-col-reverse space-y-reverse space-y-4">
+    <FlexItem>Flex</FlexItem>
+    <FlexItem>on</FlexItem>
+    <FlexItem>'em!</FlexItem>
+  </Flex>
+</Preview>
+
+#### Growing / Shrinking
+You can grow / shrink a `Flex` automatically by adding `flex-auto`. This takes the element's
+size into consideration.
+<Preview>
+  <Flex>
+    <FlexItem className="flex-auto">Flex</FlexItem>
+    <FlexItem className="flex-auto">on</FlexItem>
+    <FlexItem className="flex-auto">'em!</FlexItem>
+  </Flex>
+</Preview>

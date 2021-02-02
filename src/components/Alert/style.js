@@ -1,4 +1,4 @@
-const baseProps = "px-4 py-3 rounded relative border w-full";
+const baseProps = "leading-normal px-4 py-3 rounded relative border-0 w-full";
 
 const colorProps = color => {
   return `bg-${color}-100 text-${color}-700 border-${color}-300`;

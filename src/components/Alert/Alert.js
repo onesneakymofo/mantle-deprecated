@@ -1,4 +1,5 @@
 import React from "react";
+import {Flex, FlexItem} from "../Flex";
 import PropTypes from "prop-types";
 import alertStyle from "./style";
 import { createContext, useContext } from "react";
@@ -18,44 +19,44 @@ const useAlertContext = () => {
 const Alert = (
   {
     color = 'gray',
-    className,
+    className ,
     children
   }
 ) => {
   const context = { color };
   return (
     <AlertContext.Provider value={context}>
-      <div
-        className={ alertStyle({color}) + " " + className}
+      <Flex
+        className={ alertStyle({color}) + " flex-col " + className}
         role="alert">
         { children }
-      </div>
+      </Flex>
     </AlertContext.Provider>
   )
 }
 
 const AlertTitle = ({children}) => {
   return (
-      <div className="font-bold">
-        { children }
-      </div>
+    <FlexItem className="flex-grow font-medium">
+      { children }
+    </FlexItem>
   )
 }
 
 
 const AlertDescription = ({children}) => {
   return (
-      <div>
+      <FlexItem className="flex-grow">
         { children }
-      </div>
+      </FlexItem>
   )
 }
 
 const AlertDismiss = () => {
   return (
-    <span className="absolute top-0 bottom-0 right-0 px-4 py-3">
+    <button className="absolute top-0 bottom-0 right-0 px-4 py-3" aria-label="Close alert">
       <svg className="fill-current h-6 w-6" role="button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><title>Close</title><path d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z"/></svg>
-    </span>
+    </button>
   )
 }
 
