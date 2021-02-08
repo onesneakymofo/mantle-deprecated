@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import buttonStyle from "./style";
+import * as Style from "./style";
 
 const Button = (
   {
@@ -17,12 +17,17 @@ const Button = (
   }
 ) => {
   return (
-    <button
-      className={ buttonStyle({color, variant, size, disabled}) + " " + className}
+    <Style.Button 
+      color={color} 
+      variant={variant} 
+      size={size} 
+      disabled={disabled} 
+      type={type} 
+      role="button" 
       { ...rest }
     >
       { children }
-    </button>
+    </Style.Button>
   )
 }
 
