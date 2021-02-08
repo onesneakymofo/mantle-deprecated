@@ -2,6 +2,7 @@ import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
 import { withKnobs, select, boolean } from '@storybook/addon-knobs';
 
 import { Button } from '../components/Button';
+import { Flex, FlexItem } from '../components/Flex';
 
 <Meta title="Button" component={Button} />
 
@@ -21,6 +22,7 @@ buttons should be used primary in tables.`
 
 <Preview>
   <Button variant="solid">Solid Button</Button>
+  <Button variant="light">Light Button</Button>
   <Button variant="outline">Outline Button</Button>
   <Button variant="link">Link Button</Button>
   <Button variant="ghost">Ghost Button</Button>
@@ -28,32 +30,91 @@ buttons should be used primary in tables.`
 
 
 ### Colors
-Buttons can be colorized by adding `color` tag to the component.
-
+Buttons can be colorized by adding `color` tag to the component. Colors can be changed by adding different variants
 <Preview>
-  <Button color="blueGray">Blue Gray Button</Button>
-  <Button color="coolGray">Cool Gray Button</Button>
-  <Button color="gray">Gray Button</Button>
-  <Button color="trueGray">True Gray Button</Button>
-  <Button color="warmGray">Warm Gray Button</Button>
-  <Button color="red">Red Button</Button>
-  <Button color="orange">Orange Button</Button>
-  <Button color="amber">Amber Button</Button>
-  <Button color="yellow">Yellow Button</Button>
-  <Button color="lime">Lime Button</Button>
-  <Button color="green">Green Button</Button>
-  <Button color="emerald">Emerald Button</Button>
-  <Button color="teal">Teal Button</Button>
-  <Button color="cyan">Cyan Button</Button>
-  <Button color="lightBlue">Light Blue Button</Button>
-  <Button color="blue">Blue Button</Button>
-  <Button color="indigo">Indigo Button</Button>
-  <Button color="violet">Violet Button</Button>
-  <Button color="purple">Purple Button</Button>
-  <Button color="fuchsia">Fuchsia Button</Button>
-  <Button color="pink">Pink Button</Button>
-  <Button color="rose">Rose Button</Button>
+  <Flex>
+    <FlexItem className="flex-col space-y-4">
+      Solid Colors
+      <Button color="blueGray">Blue Gray Button</Button>
+      <Button color="coolGray">Blue Gray Button</Button>
+      <Button color="coolGray">Cool Gray Button</Button>
+      <Button color="gray">Gray Button</Button>
+      <Button color="trueGray">True Gray Button</Button>
+      <Button color="warmGray">Warm Gray Button</Button>
+      <Button color="red">Red Button</Button>
+      <Button color="orange">Orange Button</Button>
+      <Button color="amber">Amber Button</Button>
+      <Button color="yellow">Yellow Button</Button>
+      <Button color="lime">Lime Button</Button>
+      <Button color="green">Green Button</Button>
+      <Button color="emerald">Emerald Button</Button>
+      <Button color="teal">Teal Button</Button>
+      <Button color="cyan">Cyan Button</Button>
+      <Button color="lightBlue">Light Blue Button</Button>
+      <Button color="blue">Blue Button</Button>
+      <Button color="indigo">Indigo Button</Button>
+      <Button color="violet">Violet Button</Button>
+      <Button color="purple">Purple Button</Button>
+      <Button color="fuchsia">Fuchsia Button</Button>
+      <Button color="pink">Pink Button</Button>
+      <Button color="rose">Rose Button</Button>
+    </FlexItem>
+    <div className="flex-col  space-y-4">
+      Light
+      <Button color="blueGray" variant="light">Blue Gray Button</Button>
+      <Button color="coolGray" variant="light">Blue Gray Button</Button>
+      <Button color="coolGray" variant="light">Cool Gray Button</Button>
+      <Button color="gray" variant="light">Gray Button</Button>
+      <Button color="trueGray" variant="light">True Gray Button</Button>
+      <Button color="warmGray" variant="light">Warm Gray Button</Button>
+      <Button color="red" variant="light">Red Button</Button>
+      <Button color="orange" variant="light">Orange Button</Button>
+      <Button color="amber" variant="light">Amber Button</Button>
+      <Button color="yellow" variant="light">Yellow Button</Button>
+      <Button color="lime" variant="light">Lime Button</Button>
+      <Button color="green" variant="light">Green Button</Button>
+      <Button color="emerald" variant="light">Emerald Button</Button>
+      <Button color="teal" variant="light">Teal Button</Button>
+      <Button color="cyan" variant="light">Cyan Button</Button>
+      <Button color="lightBlue" variant="light">Light Blue Button</Button>
+      <Button color="blue" variant="light">Blue Button</Button>
+      <Button color="indigo" variant="light">Indigo Button</Button>
+      <Button color="violet" variant="light">Violet Button</Button>
+      <Button color="purple" variant="light">Purple Button</Button>
+      <Button color="fuchsia" variant="light">Fuchsia Button</Button>
+      <Button color="pink" variant="light">Pink Button</Button>
+      <Button color="rose" variant="light">Rose Button</Button>
+    </div>
+    <div className="flex-col space-y-4">
+      Outline
+      <Button color="blueGray" variant="outline">Blue Gray Button</Button>
+      <Button color="coolGray" variant="outline">Blue Gray Button</Button>
+      <Button color="coolGray" variant="outline">Cool Gray Button</Button>
+      <Button color="gray" variant="outline">Gray Button</Button>
+      <Button color="trueGray" variant="outline">True Gray Button</Button>
+      <Button color="warmGray" variant="outline">Warm Gray Button</Button>
+      <Button color="red" variant="outline">Red Button</Button>
+      <Button color="orange" variant="outline">Orange Button</Button>
+      <Button color="amber" variant="outline">Amber Button</Button>
+      <Button color="yellow" variant="outline">Yellow Button</Button>
+      <Button color="lime" variant="outline">Lime Button</Button>
+      <Button color="green" variant="outline">Green Button</Button>
+      <Button color="emerald" variant="outline">Emerald Button</Button>
+      <Button color="teal" variant="outline">Teal Button</Button>
+      <Button color="cyan" variant="outline">Cyan Button</Button>
+      <Button color="lightBlue" variant="outline">Light Blue Button</Button>
+      <Button color="blue" variant="outline">Blue Button</Button>
+      <Button color="indigo" variant="outline">Indigo Button</Button>
+      <Button color="violet" variant="outline">Violet Button</Button>
+      <Button color="purple" variant="outline">Purple Button</Button>
+      <Button color="fuchsia" variant="outline">Fuchsia Button</Button>
+      <Button color="pink" variant="outline">Pink Button</Button>
+      <Button color="rose" variant="outline">Rose Button</Button>
+    </div>
+  </Flex>
 </Preview>
+
+#### Light Colors
 
 ### Sizes
 Buttons can be sized by adding the `size` tag to the component. Sizes come in

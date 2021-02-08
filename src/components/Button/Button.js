@@ -17,17 +17,14 @@ const Button = (
   }
 ) => {
   return (
-    <Style.Button 
-      color={color} 
-      variant={variant} 
-      size={size} 
-      disabled={disabled} 
-      type={type} 
-      role="button" 
+    <div
+      type={type}
+      role="button"
+      className={Style.Button(color, size, variant, disabled)}
       { ...rest }
     >
       { children }
-    </Style.Button>
+    </div>
   )
 }
 
