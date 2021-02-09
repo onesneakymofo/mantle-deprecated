@@ -1,8 +1,8 @@
 import React from "react";
-import {Flex, FlexItem} from "../Flex";
-import PropTypes from "prop-types";
-import alertStyle from "./style";
 import { createContext, useContext } from "react";
+import PropTypes from "prop-types";
+import * as Style from "./style";
+import {Flex, FlexItem} from "../Flex";
 
 const AlertContext = createContext();
 
@@ -27,7 +27,7 @@ const Alert = (
   return (
     <AlertContext.Provider value={context}>
       <Flex
-        className={ alertStyle({color}) + " flex-col " + className}
+        className={ Style.Alert(color)  + " flex-col " + className }
         role="alert">
         { children }
       </Flex>

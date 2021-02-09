@@ -11,7 +11,7 @@ const Button = (
     type,
     role,
     children,
-    className,
+    className = null,
     onclick,
     ...rest
   }
@@ -20,7 +20,7 @@ const Button = (
     <div
       type={type}
       role="button"
-      className={Style.Button(color, size, variant, disabled)}
+      className={Style.Button(color, size, variant, disabled) + " " + className}
       { ...rest }
     >
       { children }
